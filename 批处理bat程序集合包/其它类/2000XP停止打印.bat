@@ -1,0 +1,6 @@
+@ECHO 请先关闭打印机电源 河源下载站 Www.Cngr.CN
+@ECHO OFF
+PAUSE
+NET STOP SPOOLER
+DEL C:\WINDOWS\system32\spool\PRINTERS\*.*  /Q
+NET START SPOOLER
